@@ -102,7 +102,9 @@ export default function App() {
       }
     } catch (err: unknown) {
       console.error('Login error:', err);
-      setError('Nie udało się zalogować. Sprawdź okno autoryzacji i spróbuj ponownie.');
+      const msg = err instanceof Error ? err.message : String(err);
+      setError(msg);
+      showToast(msg, 'error');
     } finally {
       setIsLoggingIn(false);
     }
