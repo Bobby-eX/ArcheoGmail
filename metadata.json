@@ -1,0 +1,6 @@
+{
+  "name": "Gmail Date & Attachment Cleanup",
+  "description": "App to view, filter by sender and attachment size, and clean up Gmail emails received on a specific date.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
